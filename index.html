@@ -28,7 +28,6 @@
         <div class="row justify-content-center">
             <div class="col-12 text-center mb-5">
                 <h1 class="display-4">Choose Your Quiz Topic</h1>
-                <button class="btn btn-danger mt-3" onclick="logout()">Logout</button>
             </div>
             
             <div class="col-md-4 mb-4">
@@ -67,20 +66,5 @@
         &copy; Developed by Nilarka Das : +918207070408
     </div>
 
-    <script>
-        // Authentication check
-        if(!sessionStorage.getItem('loggedIn')) {
-            window.location.href = 'index.html';
-        }
-
-        function startQuiz(topic) {
-            window.location.href = `${topic}quiz.html`;
-        }
-
-        function logout() {
-            sessionStorage.clear();
-            window.location.href = 'index.html';
-        }
-    </script>
 </body>
 </html>
